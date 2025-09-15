@@ -15,6 +15,7 @@
 html{
 
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
 }
 
@@ -363,41 +364,97 @@ font-size: 1.6rem;
 }
 
 .contact{
+    
+    height: 100vh;
+    width: 100%;
+    transform: scale3d(1.1);
+
+}
+
+.contact p{
 
     position: relative;
+    left: 17pc;
     display: block;
-    flex-direction: row;
+    font-size: 30px;
+
+}
+
+.contact p span::before{
+
+    content: 'Idea';
+    animation: msgalter 20s ease infinite;
+
+}
+
+.contact p span::after{
+
+    content: '';
+    border-left: 1px solid black;
+    position: relative;
+    right: -8px;
+    animation: cursor 0.6s infinite;
+
+}
+
+@keyframes msgalter {
+    
+
+    0%,25%{
+
+        content: 'Feedback';
+
+    }
+
+     26%,50%{
+
+        content: 'Message';
+
+    }
+
+     51%,75%{
+
+        content: 'Proposal';
+
+    }
+
+     76%,100%{
+
+        content: 'Idea';
+
+    }
 
 }
 
 .maindata-container-contact{
 
-    display: flex;
     position: relative;
+    top: 20px;
+    left: 15pc;
+    width: 100%;
+    display: block;    
 
 }
 
-.info-contact{
-
-    display: block;
-    flex-direction: column;
-
-}
-
-.maindata-container-contact textarea{
+#msg-contact{
 
     resize: none;
     padding: 15px;
+    margin-left: 15px;
+    border: 1px solid rgba(85, 85, 252, 0.815);
     border-radius: 20px;
-    max-width: 400px;
 
 }
 
-.info-contact input{
+
+
+.contact input{
 
     height: 40px;
+    width: 18pc;
+    display: block;
     font-size: 15px;
-    margin: 10px 0 0 15px;
+    margin: 10px 0 10px 15px;
     border-radius: 20px;
     border: 1px solid rgba(85, 85, 252, 0.815);
     padding-left: 20px;
@@ -406,12 +463,15 @@ font-size: 1.6rem;
 
 #send{
 
-    height: 40px;
-    width: 40px;
-    font-size: 15px;
+    height: 50px;
+    cursor: pointer;
+    width: 18pc;
+    font-size: 16px;
+    font-weight: bold;
     margin: 10px 0 0 15px;
     border-radius: 20px;
     color: white;
+    display: block;
     background-color: rgba(85, 85, 252, 0.815);
     border: 1px solid rgba(85, 85, 252, 0.815);
 
@@ -424,9 +484,10 @@ font-size: 1.6rem;
 
 }
 
-.info-contact label{
+.contact label{
 
     color: rgba(85, 85, 252, 0.815);
+    display: block;
     font-size: 15px;
 
 }

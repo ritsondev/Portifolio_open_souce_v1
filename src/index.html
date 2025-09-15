@@ -11,10 +11,10 @@
 <body>
     
     <header>
-        <a href="./index.html" class="logo">Ritson</a>
+        <a href="#" class="logo">Ritson</a>
 
         <nav>
-            <a href="./index.html" class="active">Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#" class="">Service</a>
             <a href="#" class="">Skills</a>
             <a href="#" class="">Education</a>
@@ -26,7 +26,7 @@
 
     <section class="home">
         <div class="home-img">
-            <img src="./assets/imgmain.jpg" alt="img main">
+            <img src="./assets/imgmain.jpg" alt="img main" autofocus>
         </div>
         <div class="home-content">
             <h1>Hi, it's <span>Ritson</span> </h1>
@@ -44,27 +44,20 @@
 
     <section class="contact" id="contact">
 
-        <p>Contact me <span>Now</span></p>
+        <p>Leave your <span></span></p>
 
+        <form action="" method="post" class="maindata-container-contact">
 
-        <form action="" method="post">
-
-            <div class="maindata-container-contact">
-
-                <div class="info-contact">
-
-                    <label for="name">Name</label>
-                    <input type="name" placeholder="Ritson">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Ritsondev@gmail.com">
-
-                </div>
-
-                <textarea name="msg-contact" id="msg-contact" cols="70" rows="10"></textarea>
-
-            </div>
-
-            <button id="send">Send</button>
+               
+        <label for="name">Name</label>
+         <input type="name" placeholder="Ritson" tabindex="1" required> 
+        <label for="email">Email</label>
+        <input type="email" placeholder="Ritsondev@gmail.com" required tabindex="2">
+        <label for="subject">Subject</label>
+        <input type="subject" placeholder="Subject Topic" required tabindex="3">
+        <label for="msg-contact"></label>
+        <textarea name="msg-contact" id="msg-contact" cols="50" rows="10"></textarea>
+        <button id="send">Send</button>
 
         </form>
 
