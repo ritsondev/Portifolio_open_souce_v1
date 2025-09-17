@@ -492,3 +492,31 @@ font-size: 1.6rem;
 
 }
 
+
+/*skills*/
+
+#img-represent{
+
+   
+
+}
+
+#img-represent img{
+
+    width: 13pc;
+    height: 13pc;
+    display: block;
+    position: relative;
+    border-radius: 20pc;
+
+}
+
+#img-represent p{
+
+    font-size: 20px;
+    position: relative;
+    display: block;
+
+}
+
+
