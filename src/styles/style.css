@@ -503,6 +503,38 @@ font-size: 1.6rem;
 
 }
 
+.skills-containers ul p span{
+
+    font-size: 15px;
+
+}
+
+.skills-containers ul{
+
+    list-style: none;
+    display: block;
+
+}
+
+.skills-containers ul li{
+
+    display: block;
+
+}
+
+.skills-containers ul li img{
+
+    cursor: pointer;
+    width: 30px;
+
+}
+
+.skills-containers ul li p{
+
+    font-weight: bold;
+
+}
+
 #img-represent{
 
  position: relative;
