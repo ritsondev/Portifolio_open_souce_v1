@@ -500,6 +500,10 @@ font-size: 1.6rem;
 .skills-containers{
 
     display: flex;
+    position: relative;
+    left: 8pc;
+    top: 30px;
+    gap: 20px;
 
 }
 
@@ -519,26 +523,51 @@ font-size: 1.6rem;
 .skills-containers ul li{
 
     display: block;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.skills-containers ul li p{
+
+    display: none;
+
+}
+
+.programming-languages li, .frond-ent_development li{
+
+    position: relative;
+    left: 60px;
+
+}
+
+.design li{
+
+    position: relative;
+    left: 25px;
+
+}
+
+.database li{
+
+    position: relative;
+    left: 7px;
 
 }
 
 .skills-containers ul li img{
 
     cursor: pointer;
-    width: 30px;
-
-}
-
-.skills-containers ul li p{
-
-    font-weight: bold;
+    width: 35px;
 
 }
 
 #img-represent{
 
  position: relative;
-   
+  left: 20pc; 
 
 }
 
@@ -556,6 +585,7 @@ font-size: 1.6rem;
 
     font-size: 20px;
     position: relative;
+    left: 30px;
     display: block;
 
 }
