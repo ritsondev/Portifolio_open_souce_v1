@@ -505,6 +505,54 @@ font-size: 1.6rem;
 
 }
 
+@media(max-width:995px){
+
+    .contact{
+
+        position: relative;
+        top: 80%;
+
+    }
+
+.maindata-container-contact{
+
+    position: relative;
+    left: 25%;
+
+}
+
+.contact p{
+
+    left: 25%;
+
+}
+
+}
+
+@media(max-width:760px){
+
+    .contact{
+
+        position: relative;
+        top: 100%;
+
+    }
+
+.maindata-container-contact{
+
+    position: relative;
+    left: 7%;
+
+}
+
+.contact p{
+
+    left: 7%;
+
+}
+
+}
+
 
 /*skills*/
 
@@ -556,6 +604,7 @@ font-size: 1.6rem;
 .skills-containers ul div{
 
     display: flex;
+    justify-content: space-evenly;
     position: relative;
     border-top: 1px solid rgba(85, 85, 252, 0.815);
     padding-top: 10px;
@@ -597,6 +646,47 @@ font-size: 1.6rem;
 
 }
 
+@media(max-width:995px){
+
+    #img-represent{
+
+        left: 30%;
+
+    }
+
+
+}
+
+@media(max-width:760px){
+
+
+    .skills-containers{
+
+        display: block;
+        position: relative;
+        left: 5px;
+        width: 100%;
+
+
+    }
+
+    .skills-containers ul{
+
+        display: block;
+        width: 100%;
+        gap:5px;
+
+    }
+
+    #img-represent{
+
+        left: 18%;
+
+    }
+
+}
+
+
 /*projects*/
 
 .services{
@@ -606,12 +696,13 @@ font-size: 1.6rem;
 
 }
 
+
 .services #main_text{
 
     font-size: 30px;
     display: block;
     position: relative;
-    left: 40%;
+    left: 44%;
 
 }
 
@@ -637,7 +728,7 @@ font-size: 1.6rem;
     width: 22%;
     display: block;
     height: 15pc;
-    border-radius: 15%;
+    border-radius: 20%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -649,7 +740,7 @@ font-size: 1.6rem;
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border-radius: 14%;
+    border-radius: 15%;
     backdrop-filter: blur(5px);
 }
 
@@ -708,5 +799,43 @@ left: 38%;
     background-image: url(../assets/projects_imgs/Blogdev.png);
 
 }
+
+@media(max-width:995px){
+
+    .services{
+
+        position: relative;
+        top: 50%;
+        width: 100%;
+
+    }
+
+    .elements_projects{
+
+        display: block;
+        width: 100%;
+
+    }
+
+    .moviestar,.learnpay,.Blog_dev{
+    
+    width: 80%;
+    position: relative;
+    margin-bottom: 20px;
+    left: 15%;
+    display: block;
+
+}
+
+    .complement{
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width:760px){}
+
 
 
