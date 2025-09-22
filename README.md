@@ -1,4 +1,16 @@
-# Portifolio_open_souce_v1
-Public portfolio of projects and work, version 1
-This is one of the projects in which I develop the portfolio for public use.
-This is version 1 of several projects that I will develop for several others.
+My Open Source Portfolio
+
+Welcome to my open source portfolio! Here you'll find a selection of projects I've developed, with the goal of sharing knowledge, learning from the community, and, of course, contributing to the software world.
+
+💡 What will you find?
+
+Here you'll find projects I've recently developed.
+
+Projects:
+
+LEANPAY: e-commerce platform for info-products.
+
+MOVIE STAR: Netflix-inspired website for movies.
+
+BLOG.dev: blog for people in IT.
+
