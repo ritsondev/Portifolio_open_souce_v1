@@ -29,12 +29,12 @@
         <div class="home-content">
             <h1>Hi, it's <span>Ritson</span> </h1>
             <h3 class="typing-text">i'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore totam, sed fugiat aperiam rerum mollitia voluptas odit commodi corporis earum hic, voluptatem illum nostrum adipisci impedit atque assumenda excepturi.</p>
+            <p>My name is Ronaldo Mona, but I'm better known as ritsondev. I work in software development and started my programming journey at the age of 12. Currently, I'm involved in projects that include Flutter in mobile app development and I'm constantly expanding my knowledge in web development.</p>
             <div class="social-icons">
-                <a href="#"><img src="./assets/icons/icons/linkedin.svg" alt="linkedin"></a>
-                <a href="#"><img src="./assets/icons/icons/github.svg" alt="Github"></a>
-                <a href="#"><img src="./assets/icons/icons/twitter-x.svg" alt="x-twitter"></a>
-                <a href="#"><img src="./assets/icons/icons/instagram.svg" alt="instagram"></a>
+                <a href="https://ao.linkedin.com/in/ronaldo-mona-25b964267"><img src="./assets/icons/icons/linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/ritsondev"><img src="./assets/icons/icons/github.svg" alt="Github"></a>
+                <a href="https://x.com/ritson_dev"><img src="./assets/icons/icons/twitter-x.svg" alt="x-twitter"></a>
+                <a href="https://www.instagram.com/ritsondev/"><img src="./assets/icons/icons/instagram.svg" alt="instagram"></a>
             </div>
             <a href="#" class="btn">Hire me</a>
         </div>
@@ -61,10 +61,11 @@
                 <li><img src="./assets/icons skills/php.png" alt="PHP"></li>
                 <li><img src="./assets/icons skills/js.png" alt="JavaScript"></li>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Ad, qui voluptatibus. Mollitia qui odio nobis officiis non 
-                     impedit aspernatur pariatur, provident commodi 
-                    animi excepturi adipisci eos! Sunt quod incidunt ipsum!
+                <p>
+                    I have strong skills in programming languages and software development, with experience in writing clean,
+                     efficient, and maintainable code. I’m comfortable working with various languages, frameworks, and development tools,
+                     and I enjoy solving problems through technology. My background includes building projects from scratch, debugging complex systems,
+                      and collaborating in team environments. I’m always eager to learn new technologies and improve my coding practices.
                 </p>
 
             </ul>
@@ -76,10 +77,12 @@
                 <li><img src="./assets/icons skills/html.png" alt="HTML"></li>
                 <li><img src="./assets/icons skills/css.png" alt="CSS"></li>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Ad, qui voluptatibus. Mollitia qui odio nobis officiis non 
-                     impedit aspernatur pariatur, provident commodi 
-                    animi excepturi adipisci eos! Sunt quod incidunt ipsum!
+                <p>I have strong front-end development skills, with experience building responsive and user-friendly web interfaces. 
+                    I work with modern technologies such as HTML, CSS, JavaScript,.
+                     I focus on creating clean, maintainable code and delivering intuitive user experiences.
+                      I’m comfortable turning UI/UX designs into functional websites and continuously improving performance and accessibility.
+                      Passionate about design and detail, 
+                    I enjoy bringing digital products to life through code.
                 </p>
             </ul>
 
@@ -94,10 +97,10 @@
             <li><img src="./assets/icons skills/photoshop.png" alt="Photoshop"></li>
             <li><img src="./assets/icons skills/premiere.png" alt="Premiere"></li>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Ad, qui voluptatibus. Mollitia qui odio nobis officiis non 
-                     impedit aspernatur pariatur, provident commodi 
-                    animi excepturi adipisci eos! Sunt quod incidunt ipsum!
+            <p>
+                Skilled in graphic design and video editing using tools like Photoshop, Premiere Pro, and Figma.
+                 I create clean, engaging visuals for digital content, UI/UX, and social media.
+                 Focused on combining creativity with clear communication.
                 </p>
             </ul>
 
@@ -105,10 +108,10 @@
         
             <p><span>Database</span></p>
              <div> <li><img src="./assets/icons skills/mysql.png" alt="MySql"></li></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Ad, qui voluptatibus. Mollitia qui odio nobis officiis non 
-                     impedit aspernatur pariatur, provident commodi 
-                    animi excepturi adipisci eos! Sunt quod incidunt ipsum!
+            <p>Experienced in database management using MySQL. 
+                Skilled in designing, optimizing, and maintaining relational databases to ensure data integrity,
+                 performance, and security. 
+                Able to write complex queries and support data-driven applications.
             </p>
             </ul>
 
@@ -151,27 +154,51 @@
 
     <section class="contact" id="contact">
 
-        <p>Leave your <span></span></p>
+        <p>Leave your <span> </span></p>
 
-        <form action="" method="post" class="maindata-container-contact">
+        <form action="" method="post" class="maindata-container-contact" onsubmit="sendWhatsApp(event)">
 
                
         <label for="name">Name</label>
-         <input type="name" placeholder="Ritson" tabindex="1" required> 
+         <input type="name" placeholder="Ritson" tabindex="1" id="name" required> 
         <label for="email">Email</label>
-        <input type="email" placeholder="Ritsondev@gmail.com" required tabindex="2">
+        <input type="email" placeholder="Ritsondev@gmail.com" id="email" required tabindex="2">
         <label for="subject">Subject</label>
         <input type="subject" placeholder="Subject Topic" required tabindex="3">
         <label for="msg-contact"></label>
         <textarea name="msg-contact" id="msg-contact" cols="50" rows="10"></textarea>
-        <button id="send">Send</button>
+        <button id="send" >Send</button>
 
         </form>
 
     </section>
     
-    <code src="./elements/bootstrap.bundle.js"></code>
-    <code src="./elements/bootstrap.js"></code>
+    <script>
+
+        function sendWhatsApp(event){
+
+        event.preventDefault();
+    const nome = document.getElementById("name").value;
+    const message = document.getElementById("msg-contact").value;
+    const phone = "976418992";
+
+    const text = `olá mmeu nome é ${nome}, ${message} `;
+
+    const msgnospace = encodeURIComponent(text);
+
+    const link = `https://wa.me/${phone}?text=${msgnospace}`;
+
+        window.open(link,);
+
+}
+
+    </script>
+
+        
+
+
+ 
+
 
 </body>
 </html>
