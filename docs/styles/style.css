@@ -388,6 +388,7 @@ font-size: 1.6rem;
     
     height: 100vh;
     width: 100%;
+    margin-top: 40px;
     transform: scale3d(1.1);
 
 }
@@ -463,6 +464,7 @@ font-size: 1.6rem;
 
     padding: 15px;
     margin-left: 15px;
+    max-width: 300px;
     border: none;
     outline: none;
     background-color: #161616;
